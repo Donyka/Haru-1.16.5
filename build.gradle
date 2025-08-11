@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'haru-reloaded-1-16'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.36'
+    annotationProcessor 'org.projectlombok:lombok:1.18.36'
+    implementation fileTree('libraries')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+shadowJar {
+    archiveBaseName.set('Haru')
+    archiveVersion.set('1.0')
+    archiveClassifier.set('')
+    manifest {
+        attributes(
+                'Main-Class': 'net.mcp.client.Start'
+        )
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
