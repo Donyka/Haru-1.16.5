@@ -19,6 +19,16 @@
 
 ###
 
+<h1 align="center">HUD</h1>
+
+###
+
+<div align="center">
+  <img height="500" src="https://r2.e-z.host/3b5c6e0e-0b0d-4347-b5f0-73330275f31d/jr0bnd86.png"  />
+</div>
+
+###
+
 <h1 align="center">GUI</h1>
 
 ###
